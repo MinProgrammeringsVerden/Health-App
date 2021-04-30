@@ -25,9 +25,13 @@ const Loggout = (props) => {
 
     
      return (
+        <div  className = 'container'>
+        <h2>You are Logged out</h2>
         <div>
-         
+           <button  className='btn' type ='button' onClick= {e => handelRedirectionToSignIn(e)}>back to Sign In page</button>
         </div>
+       
+   </div>
     );
 }
  

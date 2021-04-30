@@ -23,10 +23,10 @@ const Home = (props) => {
        }
 
     return (
-        <div>
+        <div className = 'container'>
            <h1>Please Sign Up or Sign In</h1>
-           <button type ='button' onClick= {e => handelRedirectionToSignIn(e)}>Sign in</button>
-           <button type ='button' onClick= {e => handelRedirectionToSignUp(e)}>Sign up</button>
+           <button className='btn' type ='button' onClick= {e => handelRedirectionToSignIn(e)}>Sign in</button>
+           <button  className='btn' type ='button' onClick= {e => handelRedirectionToSignUp(e)}>Sign up</button>
         </div>
     );
 }

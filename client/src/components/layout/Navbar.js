@@ -15,7 +15,7 @@ const Navbar = (props) => {
 
 
      return ( 
-        <div>
+        <div className = 'container'>
             <ul>
           
                         

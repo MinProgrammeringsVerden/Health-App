@@ -152,13 +152,13 @@ import setMinutes from 'date-fns/setMinutes';
 
 
     return (
-        <div>
+        <div className = 'container'>
               <form onSubmit={handleSubmit}>
                   <div className='container'>
                       <label htmlFor ='doctorList'>
                          Please select your doctor
                       </label>
-                      <div>
+                      <div className='form-control'>
                           <select name='doctorList' onChange ={e => setDoctor(e.target.value)}>
                               {doctorList.map(doctor =>(
                                 <option
@@ -202,7 +202,10 @@ import setMinutes from 'date-fns/setMinutes';
                                 </div> 
                           </div>
                     
-                          <button  type='submit'>Order your appointment</button>
+                          <button className='btn' type='submit'>Order your appointment</button>
+                  </div>
+                  <div>
+                   <button  className='btn' type ='button' onClick= {e =>handleLoggout(e)}>Logg out</button>
                   </div>
               </form>
               <div>
@@ -217,9 +220,7 @@ import setMinutes from 'date-fns/setMinutes';
               </div>)): <div> Your appointments list is empty</div>}
          
             </div>
-            <div>
-              <button type ='button' onClick= {e =>handleLoggout(e)}>Logg out</button>
-            </div>
+           
 
         </div>
     );

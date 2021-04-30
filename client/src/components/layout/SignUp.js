@@ -48,7 +48,7 @@ const SignUp = (props) => {
    }
   
     return (
-        <div>
+        <div className = 'container'>
 
             <h1> Please Sign Up</h1>
 
@@ -83,13 +83,13 @@ const SignUp = (props) => {
                         Password:
                         <input type='text' placeholder='passwordCheck' value ={passwordCheck} onChange={ e =>{setPasswordCheck(e.target.value)}} />
                     </label>
-                  <button type='submit'>Send</button>
+                  <button  className='btn' type='submit'>Send</button>
             </form>
            
        </div>
        <div>
 
-           <button type ='button' onClick= {e => handelRedirectionToHome(e)}>back to Home page</button>
+           <button  className='btn' type ='button' onClick= {e => handelRedirectionToHome(e)}>back to Home page</button>
           
       </div>
 

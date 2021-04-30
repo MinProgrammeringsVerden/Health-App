@@ -45,7 +45,7 @@ import {USER_SIGNIN_REQUEST  ,
 
 
     return (
-        <div>
+        <div className = 'container'>
              <h1>Sign In</h1>
          <div>
                <form onSubmit={handleSubmit}>
@@ -57,12 +57,12 @@ import {USER_SIGNIN_REQUEST  ,
                         Password:
                         <input type='text' placeholder='password' value ={password} onChange={ e =>{setPassword(e.target.value)}} />
                     </label>
-                    <button type='submit'>Send</button>
+                    <button className='btn' type='submit'>Send</button>
                </form>
          </div>
 
          <div>
-           <button type ='button' onClick= {e => handelRedirectionToHome(e)}>back to Home page</button>
+           <button  className='btn' type ='button' onClick= {e => handelRedirectionToHome(e)}>back to Home page</button>
           
         </div>
 
