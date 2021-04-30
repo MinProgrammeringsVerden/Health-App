@@ -7,11 +7,9 @@ When the user is authenticated succesfully than his /her account has benn succes
 The user can choose the date and time of the appointment.Appointments can be added or deleted.
 The appointments list is authomaticly rendered and updated on the user profile.
 
-
-Usage
+# Usage
 npm install
 
-Run the app
+# Run the app
 npm start
-
 
